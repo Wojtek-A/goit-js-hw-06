@@ -12,3 +12,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galllery = document.querySelector(".gallery");
+console.log(galllery);
+
+const firstImg = document.createElement("li");
+const firstImgString = images[0].url
+
+console.log(firstImgString)
+
+galllery.insertAdjacentHTML("afterbegin",firstImgString)
