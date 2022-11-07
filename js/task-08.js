@@ -10,6 +10,9 @@ form.addEventListener("submit", (event) => {
   if (email.value === "" || password.value === "") {
     return alert("Wszystkie pola powinny zostać wypełnione!");
   }
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+
+  let inputData = { email: email.value, password: password.value };
+  console.log(inputData);
+
   event.currentTarget.reset();
 });
